@@ -1,0 +1,37 @@
+{% apply inky_to_html|inline_css(source('@styles/foundation-emails.css'), source('@styles/email.css')) %}
+        <div class="carEmail">
+            <div class="topMail" style="color: #fff; font-size: 1rem; display: flex ;">
+                <span style="color:  rgb(234, 255, 0); font-size: 1rem;">Welcom </span>
+                <span>{{name}}</span> 
+            </div>
+            <div class="bodyMail">
+                <div class="left">
+                    <div class="logo">
+                        <div class="cardLogo">
+                            <img src="cid:logo">
+                        </div>
+                        <span>{{mailer}}</span>
+                    </div>
+                    <div class="EmailSended">
+                        <ul>
+                            <li>Nom    : <span>{{name}}</span></li>
+                            <li>Code  : <span >{{codeValidation}}</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="right">
+                    <ul class="MotifeEmail">
+                        <li>Motife :<span>{{type_mailer}}</span></li>
+                        <li>Temps envoi   : <span>{{timeSend}}</span></li>
+                        <li>Temps Expire  : <span>{{timeExp}}</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bottomMail">
+                <ul>
+                    <li>Email : </li>
+                    <li>{{email}}</li>
+                </ul>
+            </div>
+        </div>
+{% endapply %}

@@ -1,0 +1,156 @@
+controllers:
+    resource: ../src/Controller/
+    type: attribute
+
+
+#api_login_check:
+#    path: /api/v1/auth/login
+
+api_refresh_token:
+    path: /api/token/refresh
+
+
+#------------ rout SecurityController
+security_register:
+    path: /api/v1/auth/register
+    controller: App\Controller\api\v1\auth\SecurityController::register
+    methods: POST
+    requirements:
+        _format: json
+    options:
+        openapi_context:
+            summary: POST a specific user
+            responses:
+                '200':
+                    description: Success
+
+security_validation:
+    path: /api/v1/auth/valideCompte
+    controller: App\Controller\api\v1\auth\SecurityController::valideCompte
+    methods: POST
+    requirements:
+        _format: json
+    options:
+        openapi_context:
+            summary: POST a specific user
+            responses:
+                '200':
+                    description: Success
+
+security_resendCode:
+    path: /api/v1/auth/resendCode
+    controller: App\Controller\api\v1\auth\SecurityController::resendCode
+    methods: POST
+    requirements:
+        _format: json
+    options:
+        openapi_context:
+            summary: POST a specific user
+            responses:
+                '200':
+                    description: Success
+
+api_login_check:
+    path: /api/v1/auth/login
+    controller: App\Controller\api\v1\auth\SecurityController::login
+    methods: POST
+    requirements:
+        _format: json
+    options:
+        openapi_context:
+            summary: POST a specific user
+            responses:
+                '200':
+                    description: Success
+security_logout:
+    path: /Api/v1/auth/logout
+    controller: App\Controller\api\v1\auth\SecurityController::logout
+    requirements:
+        _format: json
+    options:
+        openapi_context:
+            summary: Logout
+            responses:
+                '200':
+                    description: Success
+
+liste_user:
+    path: /api/v1/auth/listeUser
+    controller: App\Controller\api\v1\auth\SecurityController::listeUser
+    methods: GET
+    requirements:
+        _format: json
+    options:
+        openapi_context:
+            summary: GET a specific user
+            responses:
+                '200':
+                    description: Success
+#------------ End rout SecurityController
+
+#------------ rout FileRaportController
+file_raport:
+    path: /api/v1/raport/listeUser
+    controller: App\Controller\api\v1\raport\FileRaportController::listeUser
+    methods: GET
+    options:
+        openapi_context:
+            summary: GET a specific user
+            responses:
+                '200':
+                    description: Success
+
+user_id:
+    path: /api/v1/raport/searche
+    controller: App\Controller\api\v1\raport\FileRaportController::searche
+    methods: POST
+    requirements:
+        _format: json
+    options:
+        openapi_context:
+            summary: POST a specific user
+            responses:
+                '200':
+                    description: Success
+
+
+update_user:
+    path: /api/v1/raport/update
+    controller: App\Controller\api\v1\raport\FileRaportController::update
+    methods: [PUT, PATCH]
+    requirements:
+        _format: json
+    options:
+        openapi_context:
+            summary: Update an existing user
+            responses:
+                '200':
+                    description: Success
+
+delete_user:
+    path: /api/v1/raport/delete
+    controller: App\Controller\api\v1\raport\FileRaportController::delete
+    methods: [PUT, PATCH]
+    requirements:
+        _format: json
+    options:
+        openapi_context:
+            summary: delete user
+            responses:
+                '200':
+                    description: Success
+
+
+#------------ rout AdminController
+admin_addRole:
+    path: /api/v1/admin/addRole
+    controller: App\Controller\api\v1\admin\AdminController::addRole
+    methods: POST
+    requirements:
+        _format: json
+    options:
+        openapi_context:
+            summary: POST a specific roles
+            responses:
+                '200':
+                    description: Success
