@@ -1,0 +1,3 @@
+#!/bin/sh
+rsync -av ./ xoro8042@leeuw.o2switch.net:~/auth_ressource --include=public/build --include=public/.htaccess --include=vendor --exclude-from=.gitignore --exclude=".*"
+

@@ -1,0 +1,195 @@
+.carEmail{
+    width: 100%;
+    height: 20rem;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.topMail{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: 2rem;
+    padding: 1rem 3rem  0rem 3rem;
+    background: linear-gradient(
+        to bottom,
+        rgb(54, 45, 45),
+        rgb(31, 29, 29),
+        rgb(0, 0, 0)
+    );
+    border: 0.15rem solid #003803;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+    z-index: 1;
+    box-shadow: rgba(0, 0, 0, 0.498) 0px 1px 1px,
+            rgba(0, 0, 0, 0.498) 0px 2px 2px,
+            rgba(0, 0, 0, 0.498) 0px 4px 4px,
+            rgba(0, 0, 0, 0.498) 0px 8px 8px,
+            rgba(0, 0, 0, 0.498) 0px 16px 16px;
+}
+
+.topMail span{
+    padding-left: 0.5rem;
+}
+
+.bodyMail{
+    position: relative;
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    background: rgb(54, 45, 45);
+    border: 0.15rem solid #003803;
+    border-right-color: #ffffff;
+    border-left-color: #ffffff;
+    z-index: 10;
+    box-shadow: rgba(0, 0, 0, 0.498) 0px 1px 1px,
+            rgba(0, 0, 0, 0.498) 0px 2px 2px,
+            rgba(0, 0, 0, 0.498) 0px 4px 4px,
+            rgba(0, 0, 0, 0.498) 0px 8px 8px,
+            rgba(0, 0, 0, 0.498) 0px 16px 16px;
+}   
+
+.bodyMail .left{
+    width: 100%;
+    border-right-color: #ffffff;
+    background: linear-gradient(
+        to bottom,
+        rgb(54, 45, 45),
+        rgb(31, 29, 29),
+        rgb(35, 85, 25)
+    );
+}
+ .bodyMail .left .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: 2.5rem;
+    margin: 0.5rem;
+}
+
+.bodyMail .left .logo .cardLogo{
+    position: absolute;
+    overflow: hidden;
+    border: 0.1rem rgb(0, 120, 26) solid;
+    border-radius: 20px;
+    left: 0.5rem;
+    margin: 0.2rem;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.bodyMail .left .logo span {
+    position: relative; 
+    padding-top: 1rem; 
+    padding-left: 0.2rem
+}
+
+.bodyMail .left .logo img{
+    width: 100%;
+    height: 100%;
+}
+
+.bodyMail .left .EmailSended{
+    position: relative;
+    top: 2.5rem;
+    
+}
+.bodyMail .left ul{
+    padding: 1.5rem 0.5rem;
+}
+.bodyMail .left ul, .right ul{
+    display: block;
+    list-style: none;
+    font-size: 1rem;
+}
+
+.bodyMail .left li, .right li{
+    color: #fff;
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+}
+
+.bodyMail .right{
+    width: 100%;
+    background: linear-gradient(
+        to top,
+        rgb(54, 45, 45),
+        rgb(31, 29, 29),
+        rgb(35, 85, 25)
+    );
+}
+
+.bodyMail .right ul{
+    padding: 0.5rem 0.5rem;
+}
+
+.bodyMail .right ul li:nth-child(2){
+    padding: 1.5rem 0 0 0;
+}
+
+.bodyMail .right .MotifeEmail{
+    position: relative;
+    bottom: 0.5rem;
+}
+
+.bodyMail .left span{
+    color: rgb(234, 255, 0);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.bottomMail{
+    position: relative;
+    left: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: auto;
+    height: 2rem;
+    padding: 0rem 3rem  1rem 3rem;
+    margin: -0.25rem 1rem 0 1rem ;
+    color: #fff;
+    background: linear-gradient(
+    to bottom,
+    rgb(54, 45, 45),
+    rgb(31, 29, 29),
+    rgb(0, 0, 0)
+    );
+    border: 0.15rem solid #003803;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+    z-index: 1;
+    box-shadow: rgba(0, 0, 0, 0.498) 0px 1px 1px,
+            rgba(0, 0, 0, 0.498) 0px 2px 2px,
+            rgba(0, 0, 0, 0.498) 0px 4px 4px,
+            rgba(0, 0, 0, 0.498) 0px 8px 8px,
+            rgba(0, 0, 0, 0.498) 0px 16px 16px;
+}
+.bottomMail ul{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+    padding-left: 0.5rem;
+}
+
+.bottomMail ul li{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottomMail ul li:nth-child(1){
+    color: rgb(234, 255, 0);
+    margin-right: 0.5rem;
+}
