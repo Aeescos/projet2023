@@ -1,4 +1,0 @@
-kreait_firebase:
-    projects:
-        my_project:
-            credentials: '%kernel.project_dir%/config/exercice-7b9d7-firebase-adminsdk-htagl-f582bcfa90.json'
